@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="firstName">First Name:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="John" required="true">
+			<label for="lastName">Last Name:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Smith" required="true">		
+		</div>
+
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male" value="M">
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female" value="F">
+			<label for="other">Other</label>
+			<input type="radio" name="gender" id="other" value="O">						
+		</div>
+
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="email" placeholder="your email" required>
+			<label for="password">Password:</label>
+			<input type="password" name="password" minlength="5" maxlength="10">
+		</div>
+
+		<div>
+			<label>Birthday</label>
+			<select name="month">
+				<option value="">Month</option>
+				<option value="1">Jan</option>
+				<option value="2">Feb</option>
+				<option value="3">Mar</option>
+			</select>
+			<select name="day">
+				<option value="">Day</option>
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+
+			</select>
+			<select name="year">
+				<option value="">Year</option>
+				<option value="2020">CurrentYear</option>
+			</select>			
+		</div>
+
+		<div>
+			<label>I agree to the terms and conditions.</label>
+			<input type="checkbox" name="agree" value="selected" required="">
+		</div>
+
+		<button>Submit</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+console.log("Connected!");
+let pTag = document.getElementById("first");
+console.log(pTag);
+pTag = document.getElementsByClassName("special")[0];
+console.log(pTag);
+pTag = document.getElementsByTagName("p")[0];
+console.log(pTag);
+pTag = document.querySelector("#first");
+console.log(pTag);
+pTag = document.querySelector("p");
+console.log(pTag);
+pTag = document.querySelectorAll("p")[0];
+console.log(pTag);

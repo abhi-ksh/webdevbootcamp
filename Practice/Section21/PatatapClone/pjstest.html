@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper JS test</title>
+    <link rel="stylesheet" href="css/paper.css">
+    <script src="../dist/paper-full.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+        var x = 100;
+        var y = 100;
+      
+
+        for (var i = 0; i < 10; i++){
+            x = 100;
+            for(var j = 0; j < 10; j++){
+                var point = new Point(x, y);
+                var path = new Path.Circle({
+                    center: point,
+                    radius: 10,
+                    strokeColor: 'yellow',
+                    fillColor: 'green'
+                });  
+                x += 100;
+            }
+            y += 100;
+        }
+
+    </script>
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>
