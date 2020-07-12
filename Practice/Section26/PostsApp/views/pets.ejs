@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+
+<body>
+    <% var pname = petName.toLowerCase(); %>
+    <% if(pname === "mali"){ %>
+        <p>I know you named your professor as your pet!</p>
+    <% } else { %>
+        <p> You love your pet named: <%= petName %> </p>
+    <% } %>
+</body>
+
+<%- include("partials/footer") %>
+

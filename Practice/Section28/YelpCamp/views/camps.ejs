@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Welcome to YelpCamp!</h1>
+        <p class="lead">Take a look at best campsites in Florida</p>
+        <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add new campground</a>
+    </div>
+    <div class="d-flex justify-content-around">
+        <div class="row row-cols-1 row-cols-md-3">
+            <% campgrounds.forEach(site => { %>
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="<%= site.image %>" class="card-img-top" alt="FloridaCampground">
+                    <div class="card-body">
+                        <p class="card-text"><%= site.name %>, <%= site.location %> </p>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+<a href="/">Back</a>
+<%- include("partials/footer") %>
