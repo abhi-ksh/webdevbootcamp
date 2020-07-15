@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+    <h1><%= site.name %></h1>
+    <div>
+        <img src="<%= site.image %>"  alt="FloridaCampground">
+    </div>
+    <div>
+        <%= site.location %> 
+    </div>
+    <div>
+        <%= site.description %>
+    </div>
+
+<a href="/campgrounds">Back</a>
+<%- include("partials/footer") %>

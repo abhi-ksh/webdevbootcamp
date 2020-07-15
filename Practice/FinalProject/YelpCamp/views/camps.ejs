@@ -6,14 +6,15 @@
         <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add new campground</a>
     </div>
     <div class="d-flex justify-content-around">
-        <div class="row row-cols-1 row-cols-md-3">
+        <div class="row row-cols-1 row-cols-md-3 ">
             <% campgrounds.forEach(site => { %>
-            <div class="col mb-4">
+            <div class="col mb-4 d-flex justify-content-around">
                 <div class="card">
                     <img src="<%= site.image %>" class="card-img-top" alt="FloridaCampground">
                     <div class="card-body">
                         <p class="card-text"><%= site.name %>, <%= site.location %> </p>
                     </div>
+                    <div> <a href="/campgrounds/<%= site._id %>" class="btn-sm btn-success d-flex justify-content-around" >More Info </a> </div>                    
                 </div>
             </div>
             <% }); %>
